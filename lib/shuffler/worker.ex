@@ -28,13 +28,13 @@ defmodule Shuffler.Worker do
     _words(words, [], dictionary)
   end
 
-  defp _words([], acc, dictionary), do: acc
+  defp _words([], acc, _dictionary), do: acc
   defp _words([head|tail], acc, dictionary) do
     _characters(String.codepoints(head), "", dictionary) ++
       _words(tail, acc, dictionary)
   end
 
-  defp _characters([], acc, dictionary), do: acc
+  defp _characters([], acc, _dictionary), do: acc
   defp _characters([head|tail], acc, dictionary) do
     (dictionary[head] || [head])
     |> Enum.map(&(_characters(tail, acc <> &1, dictionary)))

@@ -1,20 +1,9 @@
 # Shuffler
 
-**TODO: Add description**
+  This is my first attempt on Elixir programming language.
 
-## Installation
+  The purpose of this exercise is to write a program that once
+  given a list of words and a map of variations, we get as
+  result a list of original words mixed with all variations.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add shuffler to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:shuffler, "~> 0.0.1"}]
-        end
-
-  2. Ensure shuffler is started before your application:
-
-        def application do
-          [applications: [:shuffler]]
-        end
-
+  Check out the @doctest for usage examples.
